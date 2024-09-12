@@ -1,0 +1,74 @@
+/* Payment Modal Styling */
+#paymentModal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    z-index: 1001; /* Ensure modal is on top of overlay */
+    box-sizing: border-box;
+    overflow: auto; /* Ensure content fits within the modal */
+}
+
+/* Overlay Effect */
+#paymentOverlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure overlay is below modal */
+}
+
+/* Modal Content */
+#paymentModal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+#paymentModal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#paymentModal label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+#paymentModal input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#paymentModal input:focus {
+    border-color: #8bcfa8;
+    outline: none;
+}
+
+#paymentModal button {
+    padding: 10px;
+    background-color: #8bcfa8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#paymentModal button:hover {
+    background-color: #8bcfa8;
+}
